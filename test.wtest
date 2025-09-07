@@ -1,0 +1,8 @@
+import empleados.*
+
+describe "test de gimenez" {
+    test "gimenez no puede pagar el sueldo" {
+        gimenez.descontarSueldo(300000)
+        assert.throwsException({gimenez.pagarSueldo(galvan)})
+    }
+}
